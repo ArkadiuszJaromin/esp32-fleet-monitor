@@ -50,7 +50,7 @@ export default function App() {
           upTime: d.on ? d.upTime + 1 : 0
         }))
       )
-      
+
     }, 1000)
     return () => clearInterval(interval)
   }, [])
@@ -60,7 +60,7 @@ export default function App() {
       {
         ...d,
         on: !d.on,
-        upTime : 0
+        upTime: 0
       } : d))
   }
 
@@ -73,7 +73,7 @@ export default function App() {
     <div className="dashboard">
       <div className="topbar">
         <div className="brand">
-          <span className="eyebrow">Aplikacja Testowa · Panel wewnętrzny</span>
+          <span className="eyebrow">Test Application · Internal Dashboard</span>
           <h1>ESP32 Fleet Monitor</h1>
         </div>
         <div className="brand" style={{ alignItems: 'flex-end' }}>
@@ -90,14 +90,15 @@ export default function App() {
           label="Temperature"
           value={last.temp}
           unit="°C"
-          trend={tempTrend === 'up' ? '▲ rośnie' : '▼ spada'}
+          trend={tempTrend === 'up' ? '▲ increasing' : '▼ decreasing'}
           trendDir={tempTrend}
         />
+
         <StatCard
           label="Humidity"
           value={last.hum}
           unit="%"
-          trend={humTrend === 'up' ? '▲ rośnie' : '▼ spada'}
+          trend={humTrend === 'up' ? '▲ increasing' : '▼ decreasing'}
           trendDir={humTrend}
         />
         <StatCard

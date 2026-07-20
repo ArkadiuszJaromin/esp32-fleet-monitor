@@ -41,11 +41,11 @@ npm run preview
 ```
 src/
   components/
-    StatCard.jsx        -- karty ze statystykami (temp, wilgotność, liczba urządzeń online)
-    TelemetryChart.jsx   -- wykres liniowy danych z czujnika w czasie
-    DeviceList.jsx       -- lista urządzeń z przełącznikami on/off
-  App.jsx                -- logika stanu i symulacji danych
-  styles.css
+    StatCard.jsx          -- statistic cards (temperature, humidity, number of online devices)
+    TelemetryChart.jsx    -- real-time sensor data line chart
+    DeviceList.jsx        -- device list with on/off switches
+  App.jsx                 -- application state and telemetry simulation logic
+  styles.css              -- dashboard styling
 ```
 
 ## Planned Improvements

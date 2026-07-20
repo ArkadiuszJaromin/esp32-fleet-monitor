@@ -6,6 +6,10 @@ The application simulates real-time telemetry data from sensors (temperature and
 
 The project combines experience from industrial automation, SCADA/HMI systems, and modern frontend development.
 
+## Preview
+
+![Dashboard](screenshots/dashboard.png)
+
 ## Tech Stack
 
 - React 18 + Vite

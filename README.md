@@ -1,5 +1,9 @@
 # ESP32 Fleet Monitor
 
+## Live Demo
+
+https://arkadiuszjaromin.github.io/esp32-fleet-monitor/
+
 A React-based dashboard for monitoring and controlling IoT devices (ESP32).
 
 The application simulates real-time telemetry data from sensors (temperature and humidity) and provides remote device control through an interactive dashboard. The project structure is prepared for integration with a real backend using MQTT, REST API, or Node-RED.

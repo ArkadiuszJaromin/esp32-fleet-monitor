@@ -2,8 +2,8 @@ export default function DeviceList({ devices, onToggle }) {
   return (
     <div className="card" style={{ height: 320, overflowY: 'hidden' }}>
       <div className="panel-title">
-        <span>Urządzenia</span>
-        <span>{devices.filter(d => d.on).length}/{devices.length} aktywne</span>
+        <span>Devices</span>
+        <span>{devices.filter(d => d.on).length}/{devices.length} active</span>
       </div>
       <div className="device-list">
         {devices.map(d => (

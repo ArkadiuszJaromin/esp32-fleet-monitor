@@ -4,8 +4,8 @@ export default function TelemetryChart({ data }) {
   return (
     <div className="card" style={{ height: 320 }}>
       <div className="panel-title">
-        <span>Telemetria — czujnik ESP32 #A1</span>
-        <span>ostatnie 60s</span>
+        <span>Telemetry — ESP32 #A1 sensor</span>
+        <span>last 60s</span>
       </div>
       <ResponsiveContainer width="100%" height="85%">
         <LineChart data={data} margin={{ top: 5, right: 10, left: -20, bottom: 0 }}>
@@ -16,8 +16,8 @@ export default function TelemetryChart({ data }) {
             contentStyle={{ background: '#12171c', border: '1px solid #232b32', fontFamily: 'JetBrains Mono', fontSize: 12 }}
             labelStyle={{ color: '#6f7c88' }}
           />
-          <Line type="monotone" dataKey="temp" stroke="#ffb454" strokeWidth={2} dot={false} name="Temp (°C)" />
-          <Line type="monotone" dataKey="hum" stroke="#4cc9f0" strokeWidth={2} dot={false} name="Wilgotność (%)" />
+          <Line type="monotone" dataKey="temp" stroke="#ffb454" strokeWidth={2} dot={false} name="Temperature  (°C)" />
+          <Line type="monotone" dataKey="hum" stroke="#4cc9f0" strokeWidth={2} dot={false} name="Humidity  (%)" />
         </LineChart>
       </ResponsiveContainer>
     </div>

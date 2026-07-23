@@ -2,7 +2,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 
 export default function TelemetryChart({ data }) {
   return (
-    <div className="card" style={{ height: 320 }}>
+    <div className="card" style={{ height: 360 }}>
       <div className="panel-title">
         <span>Telemetry — ESP32 #A1 sensor</span>
         <span>last 60s</span>

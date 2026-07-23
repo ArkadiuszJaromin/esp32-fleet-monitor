@@ -63,12 +63,13 @@ export default function App() {
         upTime: 0
       } : d))
   }
-
+  const [filterActiveDevice, setFilterActiveDevice] = useState(true);
   const last = data[data.length - 1]
   const first = data[0]
   const tempTrend = last.temp >= first.temp ? 'up' : 'down'
   const humTrend = last.hum >= first.hum ? 'up' : 'down'
 
+  
   return (
     <div className="dashboard">
       <div className="topbar">
@@ -110,7 +111,7 @@ export default function App() {
 
       <div className="main-grid">
         <TelemetryChart data={data} />
-        <DeviceList devices={devices} onToggle={toggleDevice} />
+        <DeviceList devices={devices} onToggle={toggleDevice} filterActive={filterActiveDevice} setFilterActive={setFilterActiveDevice}/>
       </div>
 
       <div className="footer-note">
